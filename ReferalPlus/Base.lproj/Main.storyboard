@@ -62,7 +62,7 @@
         <!--Table View Controller-->
         <scene sceneID="4Ii-Zo-kfG">
             <objects>
-                <tableViewController id="nEX-R8-pUb" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TableViewController" id="nEX-R8-pUb" customClass="TableViewController" customModule="ReferalPlus" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="198" sectionHeaderHeight="28" sectionFooterHeight="28" id="73F-A2-5Pe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,18 +72,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="192"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T4v-o1-Gea" id="Na6-bJ-4T9">
-                                    <frame key="frameInset" width="375" height="192"/>
+                                    <frame key="frameInset" width="375" height="191"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41L-qb-Rvu">
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DIST" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h7-Sw-iQH">
-                                                    <frame key="frameInset" minX="555" minY="163" width="37" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOB DESCRIPTION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crq-f9-UIr">
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -114,6 +107,11 @@
                                                         <constraint firstAttribute="height" constant="96" id="Jsj-y4-XSg"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIST" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h7-Sw-iQH">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -123,12 +121,14 @@
                                                 <constraint firstItem="P73-Cn-PtO" firstAttribute="top" secondItem="41L-qb-Rvu" secondAttribute="top" constant="2" id="A61-d3-7F8"/>
                                                 <constraint firstAttribute="trailing" secondItem="Idx-o6-MZM" secondAttribute="trailing" constant="8" id="Ayl-1o-qe1"/>
                                                 <constraint firstItem="Idx-o6-MZM" firstAttribute="leading" secondItem="A2X-c4-NZd" secondAttribute="trailing" constant="8" id="EHB-sK-MFb"/>
-                                                <constraint firstAttribute="bottom" secondItem="Idx-o6-MZM" secondAttribute="bottom" constant="7.5" id="JxM-v0-iXs"/>
+                                                <constraint firstItem="5h7-Sw-iQH" firstAttribute="top" secondItem="Idx-o6-MZM" secondAttribute="bottom" constant="8" id="EQQ-9w-qhR"/>
                                                 <constraint firstItem="P73-Cn-PtO" firstAttribute="leading" secondItem="A2X-c4-NZd" secondAttribute="trailing" constant="8" id="M9r-op-TQC"/>
                                                 <constraint firstAttribute="trailing" secondItem="P73-Cn-PtO" secondAttribute="trailing" constant="8" id="O73-o6-kqE"/>
                                                 <constraint firstAttribute="trailing" secondItem="crq-f9-UIr" secondAttribute="trailing" constant="8" id="ZO6-fd-u4Y"/>
                                                 <constraint firstItem="A2X-c4-NZd" firstAttribute="top" secondItem="41L-qb-Rvu" secondAttribute="top" id="dgI-Wj-1l2"/>
+                                                <constraint firstAttribute="bottom" secondItem="5h7-Sw-iQH" secondAttribute="bottom" constant="8.5" id="i8f-NK-d62"/>
                                                 <constraint firstItem="A2X-c4-NZd" firstAttribute="leading" secondItem="41L-qb-Rvu" secondAttribute="leading" id="n2I-cE-tIZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="5h7-Sw-iQH" secondAttribute="trailing" constant="8" id="qBi-hf-Wo9"/>
                                                 <constraint firstItem="crq-f9-UIr" firstAttribute="top" secondItem="P73-Cn-PtO" secondAttribute="bottom" constant="8" id="wMA-lO-fWe"/>
                                                 <constraint firstItem="crq-f9-UIr" firstAttribute="leading" secondItem="A2X-c4-NZd" secondAttribute="trailing" constant="8" id="x5e-gq-ZIy"/>
                                             </constraints>
@@ -151,7 +151,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aI8-D4-Bw1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1149.5999999999999" y="336.88155922038982"/>
+            <point key="canvasLocation" x="1034.4000000000001" y="232.53373313343329"/>
         </scene>
     </scenes>
 </document>

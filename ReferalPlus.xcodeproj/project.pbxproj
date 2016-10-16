@@ -14,6 +14,7 @@
 		2B5776671DB15F6F0067E0E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5776651DB15F6F0067E0E6 /* LaunchScreen.storyboard */; };
 		2B5776721DB15F6F0067E0E6 /* ReferalPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5776711DB15F6F0067E0E6 /* ReferalPlusTests.swift */; };
 		2B66DC5F1DB1F48D00E82A49 /* JobCompletedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B66DC5E1DB1F48D00E82A49 /* JobCompletedTableViewCell.swift */; };
+		9FCD6CF51DB3BF9800C4D99D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD6CF41DB3BF9800C4D99D /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		2B5776711DB15F6F0067E0E6 /* ReferalPlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferalPlusTests.swift; sourceTree = "<group>"; };
 		2B5776731DB15F6F0067E0E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B66DC5E1DB1F48D00E82A49 /* JobCompletedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobCompletedTableViewCell.swift; sourceTree = "<group>"; };
+		9FCD6CF41DB3BF9800C4D99D /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				2B5776601DB15F6F0067E0E6 /* Main.storyboard */,
 				2B66DC5E1DB1F48D00E82A49 /* JobCompletedTableViewCell.swift */,
 				2B57767C1DB15F7F0067E0E6 /* Supporting Files */,
+				9FCD6CF41DB3BF9800C4D99D /* TableViewController.swift */,
 			);
 			path = ReferalPlus;
 			sourceTree = "<group>";
@@ -157,9 +160,11 @@
 				TargetAttributes = {
 					2B5776581DB15F6F0067E0E6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					2B57766C1DB15F6F0067E0E6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 2B5776581DB15F6F0067E0E6;
 					};
 				};
@@ -211,6 +216,7 @@
 				2B57765F1DB15F6F0067E0E6 /* ViewController.swift in Sources */,
 				2B66DC5F1DB1F48D00E82A49 /* JobCompletedTableViewCell.swift in Sources */,
 				2B57765D1DB15F6F0067E0E6 /* AppDelegate.swift in Sources */,
+				9FCD6CF51DB3BF9800C4D99D /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +351,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sgedwardlim.ReferalPlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -356,6 +363,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sgedwardlim.ReferalPlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -367,6 +375,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sgedwardlim.ReferalPlusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReferalPlus.app/ReferalPlus";
 			};
 			name = Debug;
@@ -379,6 +388,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sgedwardlim.ReferalPlusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReferalPlus.app/ReferalPlus";
 			};
 			name = Release;
